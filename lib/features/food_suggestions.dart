@@ -189,6 +189,7 @@ class FoodSuggestion extends StatelessWidget {
                           ],
                         ),
                       ),
+                      
                       SizedBox(width: 20),
                       // Box 2 (right)
                       Container(
