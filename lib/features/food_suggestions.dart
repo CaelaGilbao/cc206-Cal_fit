@@ -189,7 +189,7 @@ class FoodSuggestion extends StatelessWidget {
                           ],
                         ),
                       ),
-                      
+
                       SizedBox(width: 20),
                       // Box 2 (right)
                       Container(
@@ -218,6 +218,24 @@ class FoodSuggestion extends StatelessWidget {
               ),
             ],
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.business),
+              label: 'Business',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.sms),
+              label: 'Messages',
+            ),
+          ],
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
         ),
       ),
     );
