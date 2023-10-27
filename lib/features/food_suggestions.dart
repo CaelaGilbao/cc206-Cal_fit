@@ -219,23 +219,47 @@ class FoodSuggestion extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
+        bottomNavigationBar: Container(
+          decoration: BoxDecoration(
+            color: Colors.blue, // Change the color to a visible color
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30.0),
+              topRight: Radius.circular(30.0),
             ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.business),
-              label: 'Business',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.sms),
-              label: 'Messages',
-            ),
-          ],
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black12,
+                spreadRadius: 1,
+                blurRadius: 1,
+              ),
+            ],
+          ),
+          child: BottomNavigationBar(
+            items: const <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.home),
+                  label: 'Home',
+                  backgroundColor: Colors.blue),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.search),
+                label: 'Progress',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.scanner),
+                label: 'Scanner',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.message),
+                label: 'Message',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.notifications),
+                label: 'Notification',
+              ),
+            ],
+            showSelectedLabels: false,
+            showUnselectedLabels: false,
+          ),
         ),
       ),
     );
