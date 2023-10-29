@@ -239,17 +239,17 @@ class FoodSuggestion extends StatelessWidget {
               BottomNavigationBarItem(
                   icon: Icon(Icons.home),
                   label: 'Home',
-                  backgroundColor: Colors.blue),
+                  backgroundColor: Color.fromRGBO(198, 228, 255, 1)),
               BottomNavigationBarItem(
-                icon: Icon(Icons.search),
+                icon: Icon(Icons.trending_up),
                 label: 'Progress',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.scanner),
+                icon: Icon(Icons.document_scanner),
                 label: 'Scanner',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.message),
+                icon: Icon(Icons.textsms),
                 label: 'Message',
               ),
               BottomNavigationBarItem(
