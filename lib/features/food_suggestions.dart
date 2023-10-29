@@ -6,6 +6,7 @@ class FoodSuggestion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color customBlue = Color(int.parse("0xFF0C2D48"));
+    Color darkBlue = Colors.blue; // Define the dark blue color
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -221,7 +222,7 @@ class FoodSuggestion extends StatelessWidget {
         ),
         bottomNavigationBar: Container(
           decoration: BoxDecoration(
-            color: Colors.blue, // Change the color to a visible color
+            color: Colors.black12,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(30.0),
               topRight: Radius.circular(30.0),
@@ -235,25 +236,40 @@ class FoodSuggestion extends StatelessWidget {
             ],
           ),
           child: BottomNavigationBar(
-            items: const <BottomNavigationBarItem>[
+            items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
-                  label: 'Home',
-                  backgroundColor: Color.fromRGBO(198, 228, 255, 1)),
+                icon: Icon(
+                  Icons.home,
+                  color: customBlue, // Set the color of the icon
+                ),
+                label: 'Home',
+              ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.trending_up),
+                icon: Icon(
+                  Icons.trending_up,
+                  color: customBlue, // Set the color of the icon
+                ),
                 label: 'Progress',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.document_scanner),
+                icon: Icon(
+                  Icons.document_scanner,
+                  color: customBlue, // Set the color of the icon
+                ),
                 label: 'Scanner',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.textsms),
+                icon: Icon(
+                  Icons.textsms,
+                  color: customBlue, // Set the color of the icon
+                ),
                 label: 'Message',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.notifications),
+                icon: Icon(
+                  Icons.notifications,
+                  color: customBlue, // Set the color of the icon
+                ),
                 label: 'Notification',
               ),
             ],
