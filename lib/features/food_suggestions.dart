@@ -7,6 +7,9 @@ class FoodSuggestion extends StatelessWidget {
   Widget build(BuildContext context) {
     Color customBlue = Color(int.parse("0xFF0C2D48"));
     Color darkBlue = Colors.blue; // Define the dark blue color
+    double borderRadiusValue = 40.0; // Define the radius for all edges
+    double imageWidth = 160; // Desired image width
+    double imageHeight = 160; // Desired image height
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -67,17 +70,26 @@ class FoodSuggestion extends StatelessWidget {
                       Container(
                         width: 150,
                         height: 200,
-                        color: Colors.blue,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 190, 226, 255),
+                          borderRadius:
+                              BorderRadius.circular(borderRadiusValue),
+                        ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Image.asset('assets/image1.png'),
-                            SizedBox(
-                                height:
-                                    10), // Add spacing between image and text
+                            Image.asset(
+                              'assets/image1.png',
+                              width: imageWidth,
+                              height: imageHeight,
+                            ),
+                            SizedBox(height: 10),
                             Text(
                               'Breakfast',
+                              textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -89,17 +101,26 @@ class FoodSuggestion extends StatelessWidget {
                       Container(
                         width: 150,
                         height: 200,
-                        color: Colors.green,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 190, 226, 255),
+                          borderRadius:
+                              BorderRadius.circular(borderRadiusValue),
+                        ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Image.asset('assets/image2.jpg'),
-                            SizedBox(
-                                height:
-                                    10), // Add spacing between image and text
+                            Image.asset(
+                              'assets/image2.png',
+                              width: imageWidth,
+                              height: imageHeight,
+                            ),
+                            SizedBox(height: 10),
                             Text(
                               'Lunch',
+                              textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -120,17 +141,26 @@ class FoodSuggestion extends StatelessWidget {
                       Container(
                         width: 150,
                         height: 200,
-                        color: Colors.red,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 190, 226, 255),
+                          borderRadius:
+                              BorderRadius.circular(borderRadiusValue),
+                        ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Image.asset('assets/image3.jpg'),
-                            SizedBox(
-                                height:
-                                    10), // Add spacing between image and text
+                            Image.asset(
+                              'assets/image3.png',
+                              width: imageWidth,
+                              height: imageHeight,
+                            ),
+                            SizedBox(height: 10),
                             Text(
                               'Dinner',
+                              textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -141,18 +171,27 @@ class FoodSuggestion extends StatelessWidget {
                       // Box 2 (right)
                       Container(
                         width: 150,
-                        height: 150,
-                        color: Colors.yellow,
+                        height: 200,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 190, 226, 255),
+                          borderRadius:
+                              BorderRadius.circular(borderRadiusValue),
+                        ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Image.asset('assets/image4.jpg'),
-                            SizedBox(
-                                height:
-                                    10), // Add spacing between image and text
+                            Image.asset(
+                              'assets/image4.png',
+                              width: imageWidth,
+                              height: imageHeight,
+                            ),
+                            SizedBox(height: 10),
                             Text(
                               'Snack',
+                              textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -164,7 +203,7 @@ class FoodSuggestion extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              // Third Column with Two Boxes (Add your new set of images and text here)
+              // Third Column with Two Boxes
               Column(
                 children: <Widget>[
                   Row(
@@ -173,17 +212,26 @@ class FoodSuggestion extends StatelessWidget {
                       Container(
                         width: 150,
                         height: 200,
-                        color: Colors.orange,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 190, 226, 255),
+                          borderRadius:
+                              BorderRadius.circular(borderRadiusValue),
+                        ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Image.asset('assets/image5.jpg'),
-                            SizedBox(
-                                height:
-                                    10), // Add spacing between image and text
+                            Image.asset(
+                              'assets/image5.png',
+                              width: imageWidth,
+                              height: imageHeight,
+                            ),
+                            SizedBox(height: 10),
                             Text(
                               'Snacks',
+                              textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -196,17 +244,26 @@ class FoodSuggestion extends StatelessWidget {
                       Container(
                         width: 150,
                         height: 200,
-                        color: Colors.purple,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 190, 226, 255),
+                          borderRadius:
+                              BorderRadius.circular(borderRadiusValue),
+                        ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Image.asset('assets/image6.jpg'),
-                            SizedBox(
-                                height:
-                                    10), // Add spacing between image and text
+                            Image.asset(
+                              'assets/image6.png',
+                              width: imageWidth,
+                              height: imageHeight,
+                            ),
+                            SizedBox(height: 10),
                             Text(
                               'Drinks',
+                              textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
