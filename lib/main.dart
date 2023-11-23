@@ -1,4 +1,5 @@
-import 'features/userprofile.dart';
+//import 'features/userprofile.dart';
+import 'features/food_picks.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
         useMaterial3: true,
       ),
-      home: const UserProfile(),
+      initialRoute: 'home',
+      routes: {
+        'home': (context) => FoodPicks(),
+        //'about_me': (context) => About_Me(),
+      },
+      home: FoodPicks(),
     );
   }
 }
