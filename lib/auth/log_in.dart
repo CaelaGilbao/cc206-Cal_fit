@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'sign_up.dart';
 
 class LoginPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
@@ -272,7 +273,11 @@ class RegisterTextRow extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {
-                // Add navigation logic to the registration page
+                //navigation logic to the registration page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RegistrationPage()),
+                );
                 print('Navigate to registration page');
               },
               child: Text(
