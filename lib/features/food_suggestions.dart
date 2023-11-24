@@ -96,7 +96,7 @@ class FoodSuggestion extends StatelessWidget {
                                 ),
                               ),
                               Image.asset(
-                                'assets/image1.png',
+                                'assets/image3.png',
                                 width: imageWidth,
                                 height: imageHeight,
                               ),
@@ -225,7 +225,7 @@ class FoodSuggestion extends StatelessWidget {
                                 ),
                               ),
                               Image.asset(
-                                'assets/image3.png',
+                                'assets/image1.png',
                                 width: imageWidth,
                                 height: imageHeight,
                               ),
