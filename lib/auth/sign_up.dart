@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'log_in.dart';
 
 class RegistrationPage extends StatefulWidget {
   @override
@@ -65,10 +66,27 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'You can Login here !',
+                    'You can',
                     style: TextStyle(
                       fontSize: 12.0,
                       color: customGray,
+                    ),
+                  ),
+                  SizedBox(width: 4.0),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginPage()),
+                      );
+                    },
+                    child: Text(
+                      'Login here !',
+                      style: TextStyle(
+                        fontSize: 12.0,
+                        color: Colors.blue,
+                        decoration: TextDecoration.underline,
+                      ),
                     ),
                   ),
                 ],
@@ -112,14 +130,13 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       'Email: $email, Username: $username, Password: $password, Confirm Password: $confirmPassword');
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue, // Set the button color to blue
-                  onPrimary: Colors.white, // Set the text color to white
-                  minimumSize:
-                      Size(300, 50), // Set the minimum size of the button
+                  primary: Colors.blue,
+                  onPrimary: Colors.white,
+                  minimumSize: Size(300, 50),
                 ),
                 child: Text(
                   'Register',
-                  style: TextStyle(fontSize: 16), // Set the text size
+                  style: TextStyle(fontSize: 16),
                 ),
               ),
             ],
@@ -185,6 +202,20 @@ class _RegistrationPageState extends State<RegistrationPage> {
           ),
         ),
       ],
+    );
+  }
+}
+
+class LoginPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Login Page'),
+      ),
+      body: Center(
+        child: Text('This is the login page!'),
+      ),
     );
   }
 }
