@@ -13,7 +13,24 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  cupertino_icons: 1.0.6
   flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
+    - assets/logo.png
+    - assets/image1.png
+    - assets/image2.png
+    - assets/image3.png
+    - assets/image4.png
+    - assets/image5.png
+    - assets/image6.png
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat/static/Montserrat-Regular.ttf
+        - asset: fonts/Montserrat/static/Montserrat-Bold.ttf
+        - asset: fonts/Poppins/Poppins-Regular.ttf
+        - asset: fonts/Poppins/Poppins-Bold.ttf
