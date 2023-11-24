@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
 
 void main() {
-  runApp(MyApp());
+  runApp(ProcedureTab());
 }
 
-class MyApp extends StatelessWidget {
+class ProcedureTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -73,7 +73,8 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Row(
-              mainAxisAlignment: MainAxisAlignment.start, // Align to the start (left)
+              mainAxisAlignment:
+                  MainAxisAlignment.start, // Align to the start (left)
               children: [
                 Text(
                   '1. First, add the strawberries, milk, yogurt, vanilla extract, and maple syrup to a medium or large bowl (or blender).',
@@ -82,7 +83,8 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Row(
-              mainAxisAlignment: MainAxisAlignment.start, // Align to the start (left)
+              mainAxisAlignment:
+                  MainAxisAlignment.start, // Align to the start (left)
               children: [
                 Text(
                   '2. Pour the ingredients using an immersion blender directly in the bowl (or in a standing blender).',
@@ -91,7 +93,8 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Row(
-              mainAxisAlignment: MainAxisAlignment.start, // Align to the start (left)
+              mainAxisAlignment:
+                  MainAxisAlignment.start, // Align to the start (left)
               children: [
                 Text(
                   '3. Stir chia seeds into the mixture in the bowl (transfer from the standing blender to a bowl at this point if that\'s what you used).',
