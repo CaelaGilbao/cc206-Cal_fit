@@ -41,7 +41,7 @@ class FoodSuggestion extends StatelessWidget {
                 child: Text(
                   'Food Choices',
                   style: TextStyle(
-                    fontFamily: 'Montserrat',
+                    fontFamily: 'Poppins',
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                     fontSize: 18,
@@ -71,7 +71,7 @@ class FoodSuggestion extends StatelessWidget {
                               'Breakfast',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: 'Montserrat',
+                                fontFamily: 'Poppins',
                                 color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13.5,
@@ -94,7 +94,7 @@ class FoodSuggestion extends StatelessWidget {
                                 Text(
                                   '4.5',
                                   style: TextStyle(
-                                    fontFamily: 'Montserrat',
+                                    fontFamily: 'Poppins',
                                     color: const Color.fromARGB(255, 0, 0, 0),
                                     fontWeight: FontWeight.bold,
                                     fontSize: 10,
@@ -131,7 +131,7 @@ class FoodSuggestion extends StatelessWidget {
                               'Lunch',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: 'Montserrat',
+                                fontFamily: 'Poppins',
                                 color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13.5,
@@ -154,7 +154,7 @@ class FoodSuggestion extends StatelessWidget {
                                 Text(
                                   '4.5',
                                   style: TextStyle(
-                                    fontFamily: 'Montserrat',
+                                    fontFamily: 'Poppins',
                                     color: const Color.fromARGB(255, 0, 0, 0),
                                     fontWeight: FontWeight.bold,
                                     fontSize: 10,
@@ -200,7 +200,7 @@ class FoodSuggestion extends StatelessWidget {
                               'Dinner',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: 'Montserrat',
+                                fontFamily: 'Poppins',
                                 color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13.5,
@@ -223,7 +223,7 @@ class FoodSuggestion extends StatelessWidget {
                                 Text(
                                   '4.5',
                                   style: TextStyle(
-                                    fontFamily: 'Montserrat',
+                                    fontFamily: 'Poppins',
                                     color: const Color.fromARGB(255, 0, 0, 0),
                                     fontWeight: FontWeight.bold,
                                     fontSize: 10,
@@ -260,7 +260,7 @@ class FoodSuggestion extends StatelessWidget {
                               'Snack',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: 'Montserrat',
+                                fontFamily: 'Poppins',
                                 color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13.5,
@@ -283,7 +283,7 @@ class FoodSuggestion extends StatelessWidget {
                                 Text(
                                   '4.5',
                                   style: TextStyle(
-                                    fontFamily: 'Montserrat',
+                                    fontFamily: 'Poppins',
                                     color: const Color.fromARGB(255, 0, 0, 0),
                                     fontWeight: FontWeight.bold,
                                     fontSize: 10,
@@ -329,7 +329,7 @@ class FoodSuggestion extends StatelessWidget {
                               'Soup',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: 'Montserrat',
+                                fontFamily: 'Poppins',
                                 color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13.5,
@@ -352,7 +352,7 @@ class FoodSuggestion extends StatelessWidget {
                                 Text(
                                   '4.5',
                                   style: TextStyle(
-                                    fontFamily: 'Montserrat',
+                                    fontFamily: 'Poppins',
                                     color: const Color.fromARGB(255, 0, 0, 0),
                                     fontWeight: FontWeight.bold,
                                     fontSize: 10,
@@ -390,7 +390,7 @@ class FoodSuggestion extends StatelessWidget {
                               'Low Carbs',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontFamily: 'Montserrat',
+                                fontFamily: 'Poppins',
                                 color: const Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 13.5,
@@ -413,7 +413,7 @@ class FoodSuggestion extends StatelessWidget {
                                 Text(
                                   '4.5',
                                   style: TextStyle(
-                                    fontFamily: 'Montserrat',
+                                    fontFamily: 'Poppins',
                                     color: const Color.fromARGB(255, 0, 0, 0),
                                     fontWeight: FontWeight.bold,
                                     fontSize: 10,
