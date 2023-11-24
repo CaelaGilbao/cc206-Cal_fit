@@ -5,14 +5,12 @@ class ProcedureTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Icon(Icons.contacts),
-        SizedBox(height: 20),
-        Text("Contacts Screen!"),
-      ],
+    Color customBlue = Color(int.parse("0xFF0C2D48"));
+    Color customGray = Color(int.parse("0xFFABABAB"));
+
+    return Container(
+      color: customBlue,
+      padding: const EdgeInsets.fromLTRB(20.0, 0, 20.0, 0),
     );
   }
 }

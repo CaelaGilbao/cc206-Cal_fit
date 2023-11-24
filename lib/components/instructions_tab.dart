@@ -94,7 +94,7 @@ class InstructionsTab extends StatelessWidget {
                   height: 10,
                 ),
                 Text(
-                  'Strawberries – you can use fresh (stems removed and roughly chopped) or frozen (and thawed) for this chia pudding. ',
+                  ' 1. Strawberries – you can use fresh (stems removed and roughly chopped) or frozen (and thawed) for this chia pudding. ',
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.normal,
@@ -105,7 +105,7 @@ class InstructionsTab extends StatelessWidget {
                   height: 8,
                 ),
                 Text(
-                  'Chia Seeds – make sure to use whole chia seeds, not ground.',
+                  ' 2. Chia Seeds – make sure to use whole chia seeds, not ground.',
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.normal,
@@ -116,7 +116,7 @@ class InstructionsTab extends StatelessWidget {
                   height: 8,
                 ),
                 Text(
-                  'Milk – I prefer oat milk, but you can use dairy milk or another plant based milk like almond or soy.',
+                  ' 3. Milk – I prefer oat milk, but you can use dairy milk or another plant based milk like almond or soy.',
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.normal,
@@ -127,7 +127,7 @@ class InstructionsTab extends StatelessWidget {
                   height: 8,
                 ),
                 Text(
-                  'Yogurt – I prefer whole milk yogurt here, but you can use any yogurt – Greek or regular – or a plant-based yogurt alternative',
+                  ' 4. Yogurt – I prefer whole milk yogurt here, but you can use any yogurt – Greek or regular – or a plant-based yogurt alternative',
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.normal,
@@ -138,7 +138,7 @@ class InstructionsTab extends StatelessWidget {
                   height: 8,
                 ),
                 Text(
-                  'Maple Syrup – you can use another sweetener if you like, such as honey, agave, or even regular sugar (if you use regular sugar',
+                  ' 5. Maple Syrup – you can use another sweetener if you like, such as honey, agave, or even regular sugar (if you use regular sugar',
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.normal,
