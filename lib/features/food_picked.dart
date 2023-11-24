@@ -1,5 +1,6 @@
 import 'package:cc206_cal_fit/components/instructions_tab.dart';
 import 'package:cc206_cal_fit/components/procedure_tab.dart';
+import 'package:cc206_cal_fit/features/food_suggestions.dart';
 import 'package:flutter/material.dart';
 
 class FoodPicked extends StatefulWidget {
@@ -23,8 +24,19 @@ class _FoodPicked extends State<FoodPicked> {
             style: TextStyle(
               fontFamily: 'Poppins',
               color: Colors.white,
-              fontSize: 15,
+              fontSize: 18,
               fontWeight: FontWeight.bold,
+            ),
+          ),
+          leading: GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => FoodSuggestion()));
+            },
+            child: Icon(
+              Icons.arrow_back,
+              size: 25,
+              color: Colors.white,
             ),
           ),
           backgroundColor: customBlue,

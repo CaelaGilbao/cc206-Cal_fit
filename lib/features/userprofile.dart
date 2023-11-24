@@ -1,4 +1,6 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
+import 'package:cc206_cal_fit/auth/log_in.dart';
+import 'package:cc206_cal_fit/features/food_suggestions.dart';
 import 'package:flutter/material.dart';
 
 class UserProfile extends StatelessWidget {
@@ -23,7 +25,16 @@ class UserProfile extends StatelessWidget {
         backgroundColor: customBlue,
         centerTitle: true,
         elevation: 0.0,
-        leading: Icon(Icons.arrow_back),
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => FoodSuggestion()));
+          },
+          child: Icon(
+            Icons.arrow_back,
+            size: 25,
+          ),
+        ),
       ),
       body: Container(
         color: customBlue,
@@ -245,7 +256,12 @@ class UserProfile extends StatelessWidget {
             ),
             SizedBox(height: 45.0),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+                );
+              },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
                 minimumSize: MaterialStateProperty.all<Size>(Size(150.0, 50.0)),

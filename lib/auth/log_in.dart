@@ -1,3 +1,5 @@
+import 'package:cc206_cal_fit/features/food_suggestions.dart';
+import 'package:cc206_cal_fit/features/userprofile.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -156,6 +158,11 @@ class LoginPage extends StatelessWidget {
                         bool isRememberMe = rememberMe.value;
                         print(
                             'Email: $email, Password: $password, Remember Me: $isRememberMe');
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => FoodSuggestion()),
+                        );
                       },
                       style: ButtonStyle(
                         backgroundColor:
