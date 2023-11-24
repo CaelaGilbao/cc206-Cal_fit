@@ -13,13 +13,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  cupertino_icons: 1.0.6
   flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
   assets:
     - assets/
-    - assets/avatar.png
   fonts:
     - family: Montserrat
       fonts:
