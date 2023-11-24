@@ -25,3 +25,5 @@ flutter:
       fonts:
         - asset: fonts/Montserrat/static/Montserrat-Regular.ttf
         - asset: fonts/Montserrat/static/Montserrat-Bold.ttf
+        - asset: fonts/Poppins/Poppins-Regular.ttf
+        - asset: fonts/Poppins/Poppins-Bold.ttf

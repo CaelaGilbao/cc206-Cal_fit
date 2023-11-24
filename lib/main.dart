@@ -1,5 +1,5 @@
 //import 'features/userprofile.dart';
-import 'features/food_picks.dart';
+import 'features/food_picked.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: 'home',
       routes: {
-        'home': (context) => FoodPicks(),
+        'home': (context) => FoodPicked(),
         //'about_me': (context) => About_Me(),
       },
-      home: FoodPicks(),
+      home: FoodPicked(),
     );
   }
 }
