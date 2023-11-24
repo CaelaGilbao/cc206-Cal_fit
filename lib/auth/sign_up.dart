@@ -1,3 +1,5 @@
+import 'package:cc206_cal_fit/auth/log_in.dart';
+import 'package:cc206_cal_fit/features/food_suggestions.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationPage extends StatefulWidget {
@@ -64,11 +66,22 @@ class _RegistrationPageState extends State<RegistrationPage> {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'You can Login here !',
-                    style: TextStyle(
-                      fontSize: 12.0,
-                      color: customGray,
+                  TextButton(
+                    onPressed: () {
+                      //navigation logic to the registration page
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginPage()),
+                      );
+                      print('Navigate to registration page');
+                    },
+                    child: Text(
+                      'Login here!',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          color: Colors.blue,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
@@ -110,6 +123,10 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   // Add your logic for processing the registration data
                   print(
                       'Email: $email, Username: $username, Password: $password, Confirm Password: $confirmPassword');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginPage()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.blue, // Set the button color to blue
