@@ -128,15 +128,25 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     MaterialPageRoute(builder: (context) => LoginPage()),
                   );
                 },
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.blue, // Set the button color to blue
-                  onPrimary: Colors.white, // Set the text color to white
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.blue),
                   minimumSize:
-                      Size(300, 50), // Set the minimum size of the button
+                      MaterialStateProperty.all<Size>(Size(250.0, 50.0)),
+                  shape: MaterialStateProperty.all<OutlinedBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+                  ),
                 ),
                 child: Text(
                   'Register',
-                  style: TextStyle(fontSize: 16), // Set the text size
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 15,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ],
@@ -163,11 +173,15 @@ class _RegistrationPageState extends State<RegistrationPage> {
           child: TextField(
             controller: controller,
             keyboardType: keyboardType,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 13.0,
+            ),
             decoration: InputDecoration(
               labelText: labelText,
               labelStyle: TextStyle(
                 color: customGray,
-                fontSize: 13.0,
+                fontSize: 14.0,
               ),
             ),
           ),
@@ -192,11 +206,15 @@ class _RegistrationPageState extends State<RegistrationPage> {
           child: TextField(
             controller: controller,
             obscureText: isPassword,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 13.0,
+            ),
             decoration: InputDecoration(
               labelText: labelText,
               labelStyle: TextStyle(
                 color: customGray,
-                fontSize: 13.0,
+                fontSize: 14.0,
               ),
             ),
           ),
