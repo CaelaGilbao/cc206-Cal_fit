@@ -86,7 +86,7 @@ class FoodSuggestion extends StatelessWidget {
                             children: <Widget>[
                               SizedBox(height: 5),
                               Text(
-                                'Breakfast',
+                                'Strawberry Chia Pudding',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
@@ -146,7 +146,7 @@ class FoodSuggestion extends StatelessWidget {
                             children: <Widget>[
                               SizedBox(height: 5),
                               Text(
-                                'Lunch',
+                                'Seared Salmon with Roasted Cauliflower',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
@@ -215,7 +215,7 @@ class FoodSuggestion extends StatelessWidget {
                             children: <Widget>[
                               SizedBox(height: 5),
                               Text(
-                                'Dinner',
+                                'Eggs, cereals, & fruits',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
@@ -275,7 +275,7 @@ class FoodSuggestion extends StatelessWidget {
                             children: <Widget>[
                               SizedBox(height: 5),
                               Text(
-                                'Snack',
+                                'Sriracha Chicken',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
@@ -344,7 +344,7 @@ class FoodSuggestion extends StatelessWidget {
                             children: <Widget>[
                               SizedBox(height: 5),
                               Text(
-                                'Soup',
+                                'Chicken Caesar Salad',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
@@ -405,7 +405,7 @@ class FoodSuggestion extends StatelessWidget {
                             children: <Widget>[
                               SizedBox(height: 5),
                               Text(
-                                'Low Carbs',
+                                'Tacos de cabeza',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
