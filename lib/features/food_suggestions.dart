@@ -75,7 +75,7 @@ class FoodSuggestion extends StatelessWidget {
                         // Box 1 (left)
                         Container(
                           width: 150,
-                          height: 220,
+                          height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
                             borderRadius: BorderRadius.circular(20),
@@ -135,7 +135,7 @@ class FoodSuggestion extends StatelessWidget {
                         // Box 2 (right)
                         Container(
                           width: 150,
-                          height: 220,
+                          height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
                             borderRadius: BorderRadius.circular(20),
@@ -204,7 +204,7 @@ class FoodSuggestion extends StatelessWidget {
                         // Box 1 (left)
                         Container(
                           width: 150,
-                          height: 220,
+                          height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
                             borderRadius: BorderRadius.circular(20),
@@ -264,7 +264,7 @@ class FoodSuggestion extends StatelessWidget {
                         // Box 2 (right)
                         Container(
                           width: 150,
-                          height: 220,
+                          height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
                             borderRadius: BorderRadius.circular(20),
@@ -333,7 +333,7 @@ class FoodSuggestion extends StatelessWidget {
                         // Box 1 (left)
                         Container(
                           width: 150,
-                          height: 220,
+                          height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
                             borderRadius: BorderRadius.circular(20),
@@ -394,7 +394,7 @@ class FoodSuggestion extends StatelessWidget {
                         // Box 2 (right)
                         Container(
                           width: 150,
-                          height: 220,
+                          height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
                             borderRadius: BorderRadius.circular(20),

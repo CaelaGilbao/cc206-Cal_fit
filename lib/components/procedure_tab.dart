@@ -1,108 +1,243 @@
 import 'package:flutter/material.dart';
 
-const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
-
-void main() {
-  runApp(ProcedureTab());
-}
-
 class ProcedureTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: darkBlue,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Strawberry Chia Pudding'),
-          centerTitle: true, // Align the text in the center
-        ),
-        body: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    // Add your logic for Ingredients button
-                    print('Ingredients button pressed');
-                  },
-                  child: Text('Ingredients'),
+    Color customBlue = Color(int.parse("0xFF0C2D48"));
+    Color customGray = Color(int.parse("0xFFABABAB"));
+    return Container(
+      color: customBlue,
+      padding: const EdgeInsets.fromLTRB(20.0, 0, 20.0, 0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        //mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Column(
+            children: [
+              SizedBox(height: 10),
+              Container(
+                width: 416.0, // Adjust the width based on your preference
+                height: 221.0, // Adjust the height based on your preference
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(
+                      10.0), // Adjust the border radius as needed
+                  image: DecorationImage(
+                    image: AssetImage(
+                        'assets/chia-pudding.jpg'), // Replace with the path to your image asset
+                    fit: BoxFit
+                        .cover, // You can use BoxFit.fill, BoxFit.contain, etc., based on your preference
+                  ),
                 ),
-                SizedBox(width: 20),
-                ElevatedButton(
-                  onPressed: () {
-                    // Add your logic for Procedure button
-                    print('Procedure button pressed');
-                  },
-                  child: Text('Procedure'),
+              ),
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Column(
+                    children: [
+                      Text(
+                        'Calories',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          color: customGray,
+                        ),
+                      ),
+                      Text(
+                        '180g',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(width: 10),
+                  Column(
+                    children: [
+                      Text(
+                        'Fat',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          color: customGray,
+                        ),
+                      ),
+                      Text(
+                        '9g',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(width: 10),
+                  Column(
+                    children: [
+                      Text(
+                        'Carbs',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          color: customGray,
+                        ),
+                      ),
+                      Text(
+                        '25g',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(width: 10),
+                  Column(
+                    children: [
+                      Text(
+                        'Fiber',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          color: customGray,
+                        ),
+                      ),
+                      Text(
+                        '4g',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(width: 10),
+                  Column(
+                    children: [
+                      Text(
+                        'Protein',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          color: customGray,
+                        ),
+                      ),
+                      Text(
+                        '3g',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(height: 20),
+              Container(
+                padding: EdgeInsets.all(10),
+                width: 350,
+                height: 300,
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 190, 226, 255),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(0),
+                    topRight: Radius.circular(0),
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10),
+                  ),
                 ),
-              ],
-            ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('Calories'),
-                SizedBox(width: 20),
-                Text('Fat'),
-                SizedBox(width: 20),
-                Text('Carbs'),
-                SizedBox(width: 20),
-                Text('Fiber'),
-                SizedBox(width: 20),
-                Text('Protein'),
-              ],
-            ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('180g'),
-                SizedBox(width: 20),
-                Text('9g'),
-                SizedBox(width: 20),
-                Text('25g'),
-                SizedBox(width: 20),
-                Text('4g'),
-                SizedBox(width: 20),
-                Text('3g'),
-              ],
-            ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment:
-                  MainAxisAlignment.start, // Align to the start (left)
-              children: [
-                Text(
-                  '1. First, add the strawberries, milk, yogurt, vanilla extract, and maple syrup to a medium or large bowl (or blender).',
+                child: ListView(
+                  children: [
+                    Text(
+                      "Procedures:",
+                      style: const TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xff000000),
+                        //height: 23 / 24,
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      ' 1. First, add the strawberries, milk, yogurt, vanilla extract, and maple syrup to a medium or large bowl (or blender). ',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.normal,
+                        fontSize: 13,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Text(
+                      ' 2. Purèe the ingredients using an immersion blender directly in the bowl (or in a standing blender).',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.normal,
+                        fontSize: 13,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Text(
+                      ' 3. Stir the chia seeds in to the mixture in the bowl (transfer from the standing blender to a bowl at this point if that’s what you used). Make sure they are fully submerged, as they will have a tendency to float on the top.',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.normal,
+                        fontSize: 13,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Text(
+                      ' 4. Refrigerate for 4 hours or longer. Or until the chia seeds gel up to create a thick, pudding-like consistency.',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.normal,
+                        fontSize: 13,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Text(
+                      ' 5. Serve topped with whipped cream and chopped fruit if desired. Yum!',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.normal,
+                        fontSize: 13,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                  ],
                 ),
-              ],
-            ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment:
-                  MainAxisAlignment.start, // Align to the start (left)
-              children: [
-                Text(
-                  '2. Pour the ingredients using an immersion blender directly in the bowl (or in a standing blender).',
-                ),
-              ],
-            ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment:
-                  MainAxisAlignment.start, // Align to the start (left)
-              children: [
-                Text(
-                  '3. Stir chia seeds into the mixture in the bowl (transfer from the standing blender to a bowl at this point if that\'s what you used).',
-                ),
-              ],
-            ),
-          ],
-        ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
