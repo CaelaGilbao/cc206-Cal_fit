@@ -39,7 +39,7 @@ class UserProfile extends StatelessWidget {
           ),
           body: Container(
             color: customBlue,
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(30.0),
             child: ListView(
               children: <Widget>[
                 Row(
@@ -104,11 +104,11 @@ class UserProfile extends StatelessWidget {
                       ),
                     ),
                     SizedBox(width: 4.0),
-                    Icon(
-                      Icons.keyboard_arrow_down,
-                      size: 13.0,
-                      color: Colors.white,
-                    ),
+                    // Icon(
+                    //   Icons.keyboard_arrow_down,
+                    //   size: 13.0,
+                    //   color: Colors.white,
+                    // ),
                     SizedBox(width: 85.0),
                     Text(
                       'Gender',
@@ -128,11 +128,11 @@ class UserProfile extends StatelessWidget {
                       ),
                     ),
                     SizedBox(width: 4.0),
-                    Icon(
-                      Icons.keyboard_arrow_down,
-                      size: 13.0,
-                      color: Colors.white,
-                    ),
+                    // Icon(
+                    //   Icons.keyboard_arrow_down,
+                    //   size: 13.0,
+                    //   color: Colors.white,
+                    // ),
                   ],
                 ),
                 Row(
@@ -155,12 +155,12 @@ class UserProfile extends StatelessWidget {
                       ),
                     ),
                     SizedBox(width: 4.0),
-                    Icon(
-                      Icons.keyboard_arrow_down,
-                      size: 13.0,
-                      color: Colors.white,
-                    ),
-                    SizedBox(width: 42.0),
+                    // Icon(
+                    //   Icons.keyboard_arrow_down,
+                    //   size: 13.0,
+                    //   color: Colors.white,
+                    // ),
+                    SizedBox(width: 47.0),
                     Text(
                       'Height',
                       style: TextStyle(
@@ -179,11 +179,11 @@ class UserProfile extends StatelessWidget {
                       ),
                     ),
                     SizedBox(width: 4.0),
-                    Icon(
-                      Icons.keyboard_arrow_down,
-                      size: 13.0,
-                      color: Colors.white,
-                    ),
+                    // Icon(
+                    //   Icons.keyboard_arrow_down,
+                    //   size: 13.0,
+                    //   color: Colors.white,
+                    // ),
                   ],
                 ),
                 Row(
@@ -255,7 +255,7 @@ class UserProfile extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(height: 45.0),
+                SizedBox(height: 170.0),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(

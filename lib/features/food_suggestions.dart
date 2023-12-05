@@ -146,7 +146,7 @@ class FoodSuggestion extends StatelessWidget {
                             children: <Widget>[
                               SizedBox(height: 5),
                               Text(
-                                'Seared Salmon with Roasted Cauliflower',
+                                'Seared Salmon ',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontFamily: 'Poppins',

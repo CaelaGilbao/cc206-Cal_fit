@@ -55,7 +55,7 @@ class ProcedureTab extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: 15),
                   Column(
                     children: [
                       Text(
@@ -78,7 +78,7 @@ class ProcedureTab extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: 15),
                   Column(
                     children: [
                       Text(
@@ -101,7 +101,7 @@ class ProcedureTab extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: 15),
                   Column(
                     children: [
                       Text(
@@ -124,7 +124,7 @@ class ProcedureTab extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: 15),
                   Column(
                     children: [
                       Text(
@@ -151,9 +151,9 @@ class ProcedureTab extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Container(
-                padding: EdgeInsets.all(10),
-                width: 350,
-                height: 300,
+                padding: EdgeInsets.all(15),
+                width: 400,
+                height: 350,
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 190, 226, 255),
                   borderRadius: BorderRadius.only(
