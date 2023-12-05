@@ -33,12 +33,12 @@ class FoodSuggestion extends StatelessWidget {
           ),
           body: Container(
             color: customBlue,
-            padding: const EdgeInsets.fromLTRB(20.0, 0, 20.0, 0),
+            padding: const EdgeInsets.fromLTRB(25.0, 0, 20.0, 0),
             child: ListView(
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    SizedBox(width: 280),
+                    SizedBox(width: 320),
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
@@ -48,7 +48,7 @@ class FoodSuggestion extends StatelessWidget {
                       },
                       child: Icon(
                         Icons.account_circle,
-                        size: 35,
+                        size: 40,
                         color: Colors.white,
                       ),
                     ),
@@ -74,7 +74,7 @@ class FoodSuggestion extends StatelessWidget {
                       children: <Widget>[
                         // Box 1 (left)
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
@@ -118,7 +118,7 @@ class FoodSuggestion extends StatelessWidget {
                                       fontSize: 10,
                                     ),
                                   ),
-                                  SizedBox(width: 75),
+                                  SizedBox(width: 100),
                                   Icon(
                                     Icons.keyboard_arrow_right,
                                     size: 18,
@@ -134,7 +134,7 @@ class FoodSuggestion extends StatelessWidget {
                         SizedBox(width: 20),
                         // Box 2 (right)
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
@@ -178,7 +178,7 @@ class FoodSuggestion extends StatelessWidget {
                                       fontSize: 10,
                                     ),
                                   ),
-                                  SizedBox(width: 75),
+                                  SizedBox(width: 100),
                                   Icon(
                                     Icons.keyboard_arrow_right,
                                     size: 18,
@@ -203,7 +203,7 @@ class FoodSuggestion extends StatelessWidget {
                       children: <Widget>[
                         // Box 1 (left)
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
@@ -247,7 +247,7 @@ class FoodSuggestion extends StatelessWidget {
                                       fontSize: 10,
                                     ),
                                   ),
-                                  SizedBox(width: 75),
+                                  SizedBox(width: 100),
                                   Icon(
                                     Icons.keyboard_arrow_right,
                                     size: 18,
@@ -263,7 +263,7 @@ class FoodSuggestion extends StatelessWidget {
                         SizedBox(width: 20),
                         // Box 2 (right)
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
@@ -307,7 +307,7 @@ class FoodSuggestion extends StatelessWidget {
                                       fontSize: 10,
                                     ),
                                   ),
-                                  SizedBox(width: 75),
+                                  SizedBox(width: 100),
                                   Icon(
                                     Icons.keyboard_arrow_right,
                                     size: 18,
@@ -332,7 +332,7 @@ class FoodSuggestion extends StatelessWidget {
                       children: <Widget>[
                         // Box 1 (left)
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
@@ -376,7 +376,7 @@ class FoodSuggestion extends StatelessWidget {
                                       fontSize: 10,
                                     ),
                                   ),
-                                  SizedBox(width: 75),
+                                  SizedBox(width: 100),
                                   Icon(
                                     Icons.keyboard_arrow_right,
                                     size: 18,
@@ -393,7 +393,7 @@ class FoodSuggestion extends StatelessWidget {
                         SizedBox(width: 20),
                         // Box 2 (right)
                         Container(
-                          width: 150,
+                          width: 170,
                           height: 230,
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(255, 190, 226, 255),
@@ -437,7 +437,7 @@ class FoodSuggestion extends StatelessWidget {
                                       fontSize: 10,
                                     ),
                                   ),
-                                  SizedBox(width: 75),
+                                  SizedBox(width: 100),
                                   Icon(
                                     Icons.keyboard_arrow_right,
                                     size: 18,

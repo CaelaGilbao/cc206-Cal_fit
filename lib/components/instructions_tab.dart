@@ -20,7 +20,7 @@ class InstructionsTab extends StatelessWidget {
           SizedBox(height: 20),
           Container(
             padding: EdgeInsets.all(10),
-            width: 320,
+            width: 4000,
             height: 100,
             decoration: BoxDecoration(
               color: const Color.fromARGB(255, 190, 226, 255),
